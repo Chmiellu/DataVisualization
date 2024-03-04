@@ -13,6 +13,6 @@ plt.xlabel('Dzień')
 plt.ylabel('Sprzedaż w tysiącach')
 plt.grid(True)
 plt.xticks(rotation=45)
-plt.yticks(plt.yticks()[0], labels=[f"{int(i)} tyś." for i in plt.yticks()[0]])  # Etykiety na osi Y w tysiącach
+plt.yticks(plt.yticks()[0], labels=[f"{int(i)} tyś." for i in plt.yticks()[0]])  
 plt.tight_layout()
 plt.show()
