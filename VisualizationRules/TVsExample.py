@@ -43,6 +43,8 @@ fig, ax = plt.subplots(figsize=[9, 5])
 plt.title("Sprzedaż telewizorów w 2016 roku", fontsize=16, fontweight="bold", y=1.02)
 plt.ylabel("Ilość sprzedanych telewizorów")
 plt.xticks(range(len(dane)), dane.Miesiąc)
+plt.gca().spines['top'].set_visible(False)
+plt.gca().spines['right'].set_visible(False)
 plt.ylim(bottom=0, top=270)
 
 darker_orange = (1.0, 0.3, 0.0)
